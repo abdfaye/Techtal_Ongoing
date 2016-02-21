@@ -1,6 +1,9 @@
-// Pulls Mongoose dependency for creating schemas
-var mongoose    = require('mongoose');
-var Schema      = mongoose.Schema;
+0;95;c// Pulls Mongoose dependency for creating schemas
+var mongoose        = require('mongoose');
+var Schema          = mongoose.Schema;
+
+var ValidationError = mongoose.Error.ValidationError;
+var ValidatorError  = mongoose.Error.ValidatorError;
 
 // Creates a User Schema. This will be the basis of how user data is stored in the db
 var UserSchema = new Schema({
@@ -27,6 +30,14 @@ UserSchema.pre('save', function(next){
     if(!this.created_at) {
         this.created_at = now
     }
+
+    // check if email is valid
+    if (/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/i.test(this.email)) {
+	var error = new ValidationError(this);
+	error.errors.email = new ValidatorError('email', 'Email is not valid', 'notvalid', this.email);
+	return next(error);
+    }
+
     next();
 });
 
