@@ -17,8 +17,12 @@
 
                 <!-- Text Boxes and Other User Inputs. Note ng-model binds the values to Angular $scope -->
                 <div class="form-group">
-                    <label for="username">Username <span class="badge">All fields required</span></label>
-                    <input type="text" class="form-control" id="username" placeholder="OldandGold" ng-model="formData.username" required>
+                    <label for="firstname">Prénom <span class="badge">All fields required</span></label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Goor" ng-model="formData.firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Sene" ng-model="formData.lastname" required>
                 </div>
                 <label class="radio control-label">Gender</label>
                 <div class="radio">
@@ -40,12 +44,16 @@
                     </label>
                 </div>
                 <div class="form-group">
-                    <label for="age">Age</label>
-                    <input type="number" class="form-control" id="age" placeholder="72" ng-model="formData.age" required>
+                    <label for="birthdate">Date de naissance</label>
+                    <input type="text" class="form-control" id="birthdate" placeholder="23/07/1991" ng-model="formData.birthdate" required>
                 </div>
                 <div class="form-group">
-                    <label for="language">Favorite Language</label>
-                    <input type="text" class="form-control" id="language" placeholder="Fortran" ng-model="formData.favlang" required>
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="goor.sene@senegal.com" ng-model="formData.email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="number" class="form-control" id="telephone" placeholder="773294628" ng-model="formData.telephone" required>
                 </div>
                 <div class="form-group">
                     <label for="latitude">Latitude</label>
