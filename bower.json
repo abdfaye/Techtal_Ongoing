@@ -1,0 +1,27 @@
+{
+  "name": "TechTal",
+  "description": "TechTal Ongoing",
+  "main": "server.js",
+  "authors": [
+    "Abdoulaye Faye",
+    "Babacar Gueye"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/abdfaye/Techtal_Ongoing",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "1.4.6",
+    "angularjs-geolocation": "0.1.1",
+    "bootstrap": "3.3.5",
+    "modernizr": "3.0.0",
+    "angular": "1.4.6",
+    "jquery": "2.1.4"
+  }
+}
