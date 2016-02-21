@@ -11,7 +11,7 @@ module.exports = {
 
     local:
     {
-        name: "scotch-user-map-local",
+        name: "user-map-local",
         url: "mongodb://localhost/MeanMapApp",
         port: 27017
     },

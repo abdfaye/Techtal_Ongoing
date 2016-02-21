@@ -2,7 +2,7 @@
 // -----------------------------------------------------
 var express         = require('express');
 var mongoose        = require('mongoose');
-var port            = process.env.PORT || 27017;
+var port            = process.env.PORT || 3000;
 var database        = require('./app/config');
 var morgan          = require('morgan');
 var bodyParser      = require('body-parser');
@@ -12,7 +12,7 @@ var app             = express();
 // Express Configuration
 // -----------------------------------------------------
 // Sets the connection to MongoDB
-mongoose.connect(database.localtest.url);
+mongoose.connect(database.local.url);
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));                 // sets the static files location to public
