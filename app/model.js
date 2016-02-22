@@ -32,7 +32,7 @@ UserSchema.pre('save', function(next){
     }
 
     // check if email is valid
-    if (/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/i.test(this.email)) {
+    if (/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(this.email)) {
 	var error = new ValidationError(this);
 	error.errors.email = new ValidatorError('email', 'Email is not valid', 'notvalid', this.email);
 	return next(error);
