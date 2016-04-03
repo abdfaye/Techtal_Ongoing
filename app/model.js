@@ -1,4 +1,4 @@
-0;95;c// Pulls Mongoose dependency for creating schemas
+//0;95;c// Pulls Mongoose dependency for creating schemas
 var mongoose        = require('mongoose');
 var Schema          = mongoose.Schema;
 
