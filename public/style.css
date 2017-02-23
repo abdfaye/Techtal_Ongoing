@@ -12,20 +12,6 @@
     line-height: 0px;
     padding-bottom: 19px;
 }
-.dropdown {
-  position: absolute;
-}
-
-.user-menu{
-  position: absolute;
-}
-
-.main{
-  position: absolute;
-}
-.dropdown-menu ul {
-  position: absolute;
-}
 /* Custom page footer */
 .footer {
     color: #777;
@@ -34,7 +20,7 @@
 /* Google Map! */
 #map {
     height: 805px;
-    width: 1600px;
+    /*width: 805px;*/
 }
 
 /* Responsive: Portrait tablets and up */

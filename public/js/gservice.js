@@ -187,4 +187,3 @@ angular.module('gservice', [])
 
         return googleMapService;
     });
-
